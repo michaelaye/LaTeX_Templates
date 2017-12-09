@@ -17,7 +17,7 @@
 \pagestyle{empty}
 \setcounter{secnumdepth}{0}
 
-% The textpos package is necessary to position textblocks at arbitary 
+% The textpos package is necessary to position textblocks at arbitary
 % places on the page.
 \usepackage[absolute]{textpos}
 
@@ -46,7 +46,7 @@
 % You probably don't need all of these graphics packages,
 % so remove the ones that don't have anything to do with your particular
 % input graphics.
-\usepackage{graphics,wrapfig}
+\usepackage{wrapfig}
 \usepackage{eso-pic,graphicx,paralist}
 
 % These colours are tried and tested for titles and headers. Don't
@@ -114,7 +114,7 @@
 % cells specified above in \TPGrid; the second gives the (x,y)
 % position on the grid, with the y axis pointing down.
 
-% You will have to do a lot of previewing to get everything in the 
+% You will have to do a lot of previewing to get everything in the
 % perfect place.
 
 % This gives good title positioning for a portrait poster.
@@ -135,12 +135,12 @@
 \end{textblock}
 
 % OtherOrb Logo; replace with your institution logo if you like.
-% This logo appears in the upper left corner of the poster. 
+% This logo appears in the upper left corner of the poster.
 \begin{textblock}{3}(0,0)
   \includegraphics[width=0.75\textwidth]{OtherOrbLogoGold.png}
 \end{textblock}
 
-% the {4.2}(0,1) indicates the size and position of the textblock. You'll want to 
+% the {4.2}(0,1) indicates the size and position of the textblock. You'll want to
 % adjust these until things look good for your particular poster. When you find an
 % arrangement you like, these will probably not change a lot from year-to-year.
 \begin{textblock}{4.2}(0,1.2)
@@ -148,12 +148,12 @@
   %\slshape
   \small
   I created this template to help those who use \LaTeX\ to write LPSC posters.
-  
-  I turned off paragraph indentation, but if you want it back on, look at the preamble and comment out the \verb=\parindent= command. 
-    
+
+  I turned off paragraph indentation, but if you want it back on, look at the preamble and comment out the \verb=\parindent= command.
+
   You can always find the most recent version of this template here:\\
   \url{https://github.com/MosesAstro/LaTeX_Templates}
-  
+
   \blindtext
   \bigskip
 \end{textblock}
@@ -162,9 +162,9 @@
   \Head{Left Section Header}
   %\slshape
   \small
-  You use citations and references exactly as you would for any \LaTeX\ publication. 
+  You use citations and references exactly as you would for any \LaTeX\ publication.
   You do citations just like normal \cite{kopka2003guide}.
-  Here's our second and third citation \cite{light2004end,borland2007rainbow}. 
+  Here's our second and third citation \cite{light2004end,borland2007rainbow}.
   And let's also cite \cite{green2011colour}.
 
 \begin{table}
@@ -187,12 +187,12 @@
   \end{tabular}
 \end{center}
 \end{table}
-  
+
   \bigskip
 \end{textblock}
 
-% Note that the Section styles here and below are \LHead rather than 
-% \Head. That's because these are on the right-hand-side of the poster and 
+% Note that the Section styles here and below are \LHead rather than
+% \Head. That's because these are on the right-hand-side of the poster and
 % the \LHead command left-justifies the headers while the \Head command
 % right-justifies the headers. If you don't like this, modify the lpscposter style file
 % to fit your needs.
@@ -200,14 +200,14 @@
 \begin{textblock}{4.2}(19,1.2)
   \LHead{Right Section Header}
   %\slshape
-  \small 
-  
+  \small
+
   Remember that you don't want to overwhelm your viewers with text.
   Use a little bit of text to explain what you did, make the captions to your figures excessively helpful, and leave the rest for the conversation with people who come to your poster.
   If you intend to be absent from your poster during the session, leave a copy or a URL for a copy of your abstract, paper, etc., so interested people can find out more about what you did by downloading a copy of your abstract.
-  
-  Whatever you do, don't ask your viewers to ingest tons of text all at once; they'll go elsewhere. 
-  The poster session is as much about networking as it is about presenting your results. 
+
+  Whatever you do, don't ask your viewers to ingest tons of text all at once; they'll go elsewhere.
+  The poster session is as much about networking as it is about presenting your results.
   Do both verbally.
 \end{textblock}
 
@@ -217,12 +217,12 @@
   \LHead{Concluding Remarks}
   %\slshape
   \small
-  
-  For the most part, you'll be fiddling with textblock positions and sizes to make things perfect. 
-  Unfortunately, until you've written your entire poster, you won't know exactly where everything should fit or how large specific blocks should be. 
-  You'll notice that in this template, the figures don't line up perfectly at the bottom but they do line up at the top. 
+
+  For the most part, you'll be fiddling with textblock positions and sizes to make things perfect.
+  Unfortunately, until you've written your entire poster, you won't know exactly where everything should fit or how large specific blocks should be.
+  You'll notice that in this template, the figures don't line up perfectly at the bottom but they do line up at the top.
   If you want perfect alignment, you have to make your figures and their captions the same size. That seems like silly work to me.
-  
+
   Be careful with showing the frames around boxes; you might be surprised at where frame boxes start and stop and how they overlap.
   \bigskip
 \end{textblock}
@@ -241,7 +241,7 @@
   \begin{inparaenum}
     \bibliographystyle{lpscposter}
     \fussy
-    % Hide the default references title in place of the header I set above. I like the 
+    % Hide the default references title in place of the header I set above. I like the
     % text color of the section headers to be the same, including for the References section.
      \renewcommand{\section}[2]{}
       \raggedright
@@ -255,8 +255,8 @@
 % poster unless you want it to be. Sometimes larger figures fit better in certain places even if
 % that makes them appear to be out of place. Just be clear so your reader doesn't have to
 % fight your poster to get information from it...
-% I place the figures last in the LaTeX document because it's just easier for me to keep track 
-% of where they are. It doesn't really matter, though, because we're not allowing them to float 
+% I place the figures last in the LaTeX document because it's just easier for me to keep track
+% of where they are. It doesn't really matter, though, because we're not allowing them to float
 % as one would in a normal LaTeX document.
 
 
